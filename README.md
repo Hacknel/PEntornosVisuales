@@ -1,2 +1,2 @@
-# PEntornosVisuales-IF325-Hacknel-Reyes
+# PEntornosVisuales Hacknel Alexis Reyes
 II PEV
