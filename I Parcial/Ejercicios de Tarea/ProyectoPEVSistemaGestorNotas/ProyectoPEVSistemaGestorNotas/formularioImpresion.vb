@@ -3,18 +3,16 @@ Imports Microsoft.VisualBasic.PowerPacks.Printing
 
 Public Class formularioImpresion
     Private Sub formularioImpresion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        For i = 0 To contador - 1 Step 1
+
+            rtxtImpresion.AppendText("      " & numeroRegistro(i) & "               " & nombres(i) + " " + apellidos(i) & "                   " & nota1(i).ToString & "%                " & nota2(i).ToString & "%                     " & nota3(i).ToString & "%             " & Math.Round(promedio(i), 2, MidpointRounding.AwayFromZero) & "%        " & textAproRepro(i) & vbCrLf)
+        Next
+
         Me.Hide()
         PPD.Document = PD
         PPD.ShowDialog()
         Me.Visible = True
-
-        For i = 0 To contador - 1 Step 1
-            MsgBox("Hola")
-            MessageBox.Show(i)
-            MessageBox.Show(contador)
-
-            rtxtImpresion.AppendText("      " & numeroRegistro(i) & "               " & nombres(i) + " " + apellidos(i) & "                   " & nota1(i).ToString & "%                " & nota2(i).ToString & "%                     " & nota3(i).ToString & "%             " & Math.Round(promedio(i), 2, MidpointRounding.AwayFromZero) & "%        " & textAproRepro(i) & vbCrLf)
-        Next
 
         Timer1.Start()
 
@@ -25,7 +23,6 @@ Public Class formularioImpresion
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        PrintForm1.Print()
         Timer1.Stop()
     End Sub
 
