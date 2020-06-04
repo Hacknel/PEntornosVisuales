@@ -37,6 +37,8 @@ Partial Class IngresoDatos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtmRegistro = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtPromedio = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.chbReprobado = New System.Windows.Forms.CheckBox()
         Me.chbAprobado = New System.Windows.Forms.CheckBox()
         Me.txtRegistroV = New System.Windows.Forms.TextBox()
@@ -54,12 +56,22 @@ Partial Class IngresoDatos
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnValidar = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtPromedio = New System.Windows.Forms.TextBox()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
+        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SALIRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegresarAlInicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IngresarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IngresarDatosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalculadoraExternaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImprimirLitsaDeAlumnosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UtiidadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalculadoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -223,6 +235,23 @@ Partial Class IngresoDatos
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Validacion"
         '
+        'txtPromedio
+        '
+        Me.txtPromedio.Location = New System.Drawing.Point(255, 189)
+        Me.txtPromedio.Name = "txtPromedio"
+        Me.txtPromedio.Size = New System.Drawing.Size(59, 22)
+        Me.txtPromedio.TabIndex = 21
+        Me.txtPromedio.Text = "0"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(252, 171)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(67, 16)
+        Me.Label11.TabIndex = 20
+        Me.Label11.Text = "Promedio"
+        '
         'chbReprobado
         '
         Me.chbReprobado.AutoSize = True
@@ -369,23 +398,6 @@ Partial Class IngresoDatos
         Me.btnValidar.Text = "Validar"
         Me.btnValidar.UseVisualStyleBackColor = True
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(252, 171)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(67, 16)
-        Me.Label11.TabIndex = 20
-        Me.Label11.Text = "Promedio"
-        '
-        'txtPromedio
-        '
-        Me.txtPromedio.Location = New System.Drawing.Point(255, 189)
-        Me.txtPromedio.Name = "txtPromedio"
-        Me.txtPromedio.Size = New System.Drawing.Size(59, 22)
-        Me.txtPromedio.TabIndex = 21
-        Me.txtPromedio.Text = "0"
-        '
         'btnVolver
         '
         Me.btnVolver.Location = New System.Drawing.Point(879, 406)
@@ -404,11 +416,85 @@ Partial Class IngresoDatos
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
+        'MenuStrip
+        '
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.InicioToolStripMenuItem, Me.IngresarDatosToolStripMenuItem, Me.UtiidadesToolStripMenuItem})
+        Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip.Name = "MenuStrip"
+        Me.MenuStrip.Size = New System.Drawing.Size(1115, 24)
+        Me.MenuStrip.TabIndex = 42
+        Me.MenuStrip.Text = "MenuStrip1"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SALIRToolStripMenuItem})
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(60, 20)
+        Me.ToolStripMenuItem1.Text = "Archivo"
+        '
+        'SALIRToolStripMenuItem
+        '
+        Me.SALIRToolStripMenuItem.Name = "SALIRToolStripMenuItem"
+        Me.SALIRToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
+        Me.SALIRToolStripMenuItem.Text = "Salir"
+        '
+        'InicioToolStripMenuItem
+        '
+        Me.InicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegresarAlInicioToolStripMenuItem})
+        Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
+        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.InicioToolStripMenuItem.Text = "Inicio"
+        '
+        'RegresarAlInicioToolStripMenuItem
+        '
+        Me.RegresarAlInicioToolStripMenuItem.Name = "RegresarAlInicioToolStripMenuItem"
+        Me.RegresarAlInicioToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.RegresarAlInicioToolStripMenuItem.Text = "Regresar"
+        '
+        'IngresarDatosToolStripMenuItem
+        '
+        Me.IngresarDatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IngresarDatosToolStripMenuItem1, Me.CalculadoraExternaToolStripMenuItem, Me.ImprimirLitsaDeAlumnosToolStripMenuItem})
+        Me.IngresarDatosToolStripMenuItem.Name = "IngresarDatosToolStripMenuItem"
+        Me.IngresarDatosToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
+        Me.IngresarDatosToolStripMenuItem.Text = "Opciones"
+        '
+        'IngresarDatosToolStripMenuItem1
+        '
+        Me.IngresarDatosToolStripMenuItem1.Name = "IngresarDatosToolStripMenuItem1"
+        Me.IngresarDatosToolStripMenuItem1.Size = New System.Drawing.Size(214, 22)
+        Me.IngresarDatosToolStripMenuItem1.Text = "Ingresar Datos"
+        '
+        'CalculadoraExternaToolStripMenuItem
+        '
+        Me.CalculadoraExternaToolStripMenuItem.Name = "CalculadoraExternaToolStripMenuItem"
+        Me.CalculadoraExternaToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.CalculadoraExternaToolStripMenuItem.Text = "Consultar Alumnos"
+        '
+        'ImprimirLitsaDeAlumnosToolStripMenuItem
+        '
+        Me.ImprimirLitsaDeAlumnosToolStripMenuItem.Name = "ImprimirLitsaDeAlumnosToolStripMenuItem"
+        Me.ImprimirLitsaDeAlumnosToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.ImprimirLitsaDeAlumnosToolStripMenuItem.Text = "Imprimir Lista de Alumnos"
+        '
+        'UtiidadesToolStripMenuItem
+        '
+        Me.UtiidadesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalculadoraToolStripMenuItem})
+        Me.UtiidadesToolStripMenuItem.Name = "UtiidadesToolStripMenuItem"
+        Me.UtiidadesToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
+        Me.UtiidadesToolStripMenuItem.Text = "Utiidades"
+        '
+        'CalculadoraToolStripMenuItem
+        '
+        Me.CalculadoraToolStripMenuItem.Name = "CalculadoraToolStripMenuItem"
+        Me.CalculadoraToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.CalculadoraToolStripMenuItem.Text = "Calculadora"
+        '
         'IngresoDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1115, 447)
+        Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnValidar)
@@ -417,12 +503,15 @@ Partial Class IngresoDatos
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "IngresoDatos"
         Me.Text = "Form2"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.MenuStrip.ResumeLayout(False)
+        Me.MenuStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -464,4 +553,15 @@ Partial Class IngresoDatos
     Friend WithEvents Label11 As Label
     Friend WithEvents btnVolver As Button
     Friend WithEvents btnSalir As Button
+    Friend WithEvents MenuStrip As MenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents SALIRToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InicioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegresarAlInicioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IngresarDatosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IngresarDatosToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents CalculadoraExternaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImprimirLitsaDeAlumnosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UtiidadesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CalculadoraToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -48,6 +48,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -73,6 +74,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arranque.Designer.vb">
+      <DependentUpon>arranque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="arranque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculadoraMini.Designer.vb">
+      <DependentUpon>calculadoraMini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calculadoraMini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularioImpresion.Designer.vb">
+      <DependentUpon>formularioImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularioImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="impresionDatos.Designer.vb">
+      <DependentUpon>impresionDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="impresionDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InicioSis.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +116,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -102,8 +128,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="visualizarAlumnos.Designer.vb">
+      <DependentUpon>visualizarAlumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarAlumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="arranque.resx">
+      <DependentUpon>arranque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculadoraMini.resx">
+      <DependentUpon>calculadoraMini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularioImpresion.resx">
+      <DependentUpon>formularioImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="impresionDatos.resx">
+      <DependentUpon>impresionDatos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IngresoDatos.resx">
       <DependentUpon>IngresoDatos.vb</DependentUpon>
     </EmbeddedResource>
@@ -112,9 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarAlumnos.resx">
+      <DependentUpon>visualizarAlumnos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +169,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\IngresoDatos.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -130,7 +178,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BaseDatosAlumnos.txt" />
+    <None Include="Resources\Capa 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
