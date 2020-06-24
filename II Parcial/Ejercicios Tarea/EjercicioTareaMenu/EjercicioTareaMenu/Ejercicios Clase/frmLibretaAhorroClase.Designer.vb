@@ -29,12 +29,9 @@ Partial Class frmLibretaAhorroClase
         Me.cmbInteres = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtMonto = New System.Windows.Forms.MaskedTextBox()
-        Me.mtxtIdentidad = New System.Windows.Forms.MaskedTextBox()
         Me.mtxtEdad = New System.Windows.Forms.MaskedTextBox()
         Me.cmbPais = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtApellido = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -56,6 +53,9 @@ Partial Class frmLibretaAhorroClase
         Me.Label10 = New System.Windows.Forms.Label()
         Me.ToolTipHoo = New System.Windows.Forms.ToolTip(Me.components)
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.mtxtIdentidad = New System.Windows.Forms.MaskedTextBox()
         Me.ingresoInfo.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -131,14 +131,6 @@ Partial Class frmLibretaAhorroClase
         Me.txtMonto.TabIndex = 15
         Me.txtMonto.ValidatingType = GetType(Integer)
         '
-        'mtxtIdentidad
-        '
-        Me.mtxtIdentidad.Location = New System.Drawing.Point(76, 34)
-        Me.mtxtIdentidad.Mask = "0000-0000-00000"
-        Me.mtxtIdentidad.Name = "mtxtIdentidad"
-        Me.mtxtIdentidad.Size = New System.Drawing.Size(100, 20)
-        Me.mtxtIdentidad.TabIndex = 14
-        '
         'mtxtEdad
         '
         Me.mtxtEdad.Location = New System.Drawing.Point(231, 90)
@@ -165,22 +157,6 @@ Partial Class frmLibretaAhorroClase
         Me.Label8.Size = New System.Drawing.Size(27, 13)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Pais"
-        '
-        'txtApellido
-        '
-        Me.txtApellido.Location = New System.Drawing.Point(409, 34)
-        Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(100, 20)
-        Me.txtApellido.TabIndex = 10
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(359, 37)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 13)
-        Me.Label7.TabIndex = 9
-        Me.Label7.Text = "Apellido"
         '
         'Label6
         '
@@ -359,6 +335,30 @@ Partial Class frmLibretaAhorroClase
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(359, 37)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(44, 13)
+        Me.Label7.TabIndex = 9
+        Me.Label7.Text = "Apellido"
+        '
+        'txtApellido
+        '
+        Me.txtApellido.Location = New System.Drawing.Point(409, 34)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellido.TabIndex = 10
+        '
+        'mtxtIdentidad
+        '
+        Me.mtxtIdentidad.Location = New System.Drawing.Point(76, 34)
+        Me.mtxtIdentidad.Mask = "0000-0000-00000"
+        Me.mtxtIdentidad.Name = "mtxtIdentidad"
+        Me.mtxtIdentidad.Size = New System.Drawing.Size(100, 20)
+        Me.mtxtIdentidad.TabIndex = 14
+        '
         'frmLibretaAhorroClase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -398,12 +398,9 @@ Partial Class frmLibretaAhorroClase
     Friend WithEvents txtSaldo As TextBox
     Friend WithEvents lstRetiros As ListBox
     Friend WithEvents LstDepositos As ListBox
-    Friend WithEvents mtxtIdentidad As MaskedTextBox
     Friend WithEvents mtxtEdad As MaskedTextBox
     Friend WithEvents cmbPais As ComboBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents txtApellido As TextBox
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents Label5 As Label
@@ -417,4 +414,7 @@ Partial Class frmLibretaAhorroClase
     Friend WithEvents txtCiudad As TextBox
     Friend WithEvents m As Label
     Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents mtxtIdentidad As MaskedTextBox
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents Label7 As Label
 End Class

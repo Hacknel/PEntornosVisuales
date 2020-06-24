@@ -151,6 +151,12 @@
     <Compile Include="Ejercicios Clase\frmLibretaAhorroClase.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ejercicios Tarea\frmBolsasSolidariasTarea.Designer.vb">
+      <DependentUpon>frmBolsasSolidariasTarea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicios Tarea\frmBolsasSolidariasTarea.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicios Clase\frmLibretaAhorroClase.resx">
       <DependentUpon>frmLibretaAhorroClase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicios Tarea\frmBolsasSolidariasTarea.resx">
+      <DependentUpon>frmBolsasSolidariasTarea.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
@@ -217,5 +226,6 @@
   <ItemGroup>
     <None Include="Resources\Logo-HacknelFRont.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

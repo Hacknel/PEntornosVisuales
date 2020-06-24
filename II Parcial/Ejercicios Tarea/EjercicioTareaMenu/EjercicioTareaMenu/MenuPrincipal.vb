@@ -86,4 +86,8 @@ Public Class MenuPrincipal
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         lblHora.Text = String.Format("{0:G}", DateTime.Now)
     End Sub
+
+    Private Sub BtnBolsasSolidarias_Click(sender As Object, e As EventArgs) Handles BtnBolsasSolidarias.Click
+        abrirFormulario(frmBolsasSolidariasTarea)
+    End Sub
 End Class
