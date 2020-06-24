@@ -22,6 +22,7 @@ Partial Class frmBolsasSolidariasTarea
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.label1 = New System.Windows.Forms.Label()
         Me.m = New System.Windows.Forms.Label()
         Me.cmbCnatInte = New System.Windows.Forms.ComboBox()
@@ -52,9 +53,12 @@ Partial Class frmBolsasSolidariasTarea
         Me.Municipio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmbConsultas = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.chbTodosHisto = New System.Windows.Forms.CheckBox()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.grpIngresoDatos.SuspendLayout()
         CType(Me.dgvHistorial, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'label1
@@ -122,7 +126,7 @@ Partial Class frmBolsasSolidariasTarea
         'cmbEstadoEcono
         '
         Me.cmbEstadoEcono.FormattingEnabled = True
-        Me.cmbEstadoEcono.Items.AddRange(New Object() {"Pobreza", "Pobreza Extrema", "Trabajador Vida Mejor"})
+        Me.cmbEstadoEcono.Items.AddRange(New Object() {"Pobreza", "Pobreza Extrema", "Apoyo Social"})
         Me.cmbEstadoEcono.Location = New System.Drawing.Point(841, 37)
         Me.cmbEstadoEcono.Name = "cmbEstadoEcono"
         Me.cmbEstadoEcono.Size = New System.Drawing.Size(128, 21)
@@ -331,22 +335,25 @@ Partial Class frmBolsasSolidariasTarea
         Me.Label6.TabIndex = 51
         Me.Label6.Text = "Seleccione Mostrar Historial de"
         '
-        'chbTodosHisto
+        'btnLimpiar
         '
-        Me.chbTodosHisto.AutoSize = True
-        Me.chbTodosHisto.Location = New System.Drawing.Point(509, 286)
-        Me.chbTodosHisto.Name = "chbTodosHisto"
-        Me.chbTodosHisto.Size = New System.Drawing.Size(56, 17)
-        Me.chbTodosHisto.TabIndex = 49
-        Me.chbTodosHisto.Text = "Todos"
-        Me.chbTodosHisto.UseVisualStyleBackColor = True
+        Me.btnLimpiar.Location = New System.Drawing.Point(896, 282)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(85, 38)
+        Me.btnLimpiar.TabIndex = 49
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = True
+        '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
         '
         'frmBolsasSolidariasTarea
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1052, 545)
-        Me.Controls.Add(Me.chbTodosHisto)
+        Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.cmbConsultas)
         Me.Controls.Add(Me.dgvHistorial)
@@ -358,6 +365,7 @@ Partial Class frmBolsasSolidariasTarea
         Me.grpIngresoDatos.ResumeLayout(False)
         Me.grpIngresoDatos.PerformLayout()
         CType(Me.dgvHistorial, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -393,5 +401,7 @@ Partial Class frmBolsasSolidariasTarea
     Friend WithEvents Municipio As DataGridViewTextBoxColumn
     Friend WithEvents cmbConsultas As ComboBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents chbTodosHisto As CheckBox
+    Friend WithEvents btnLimpiar As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class
