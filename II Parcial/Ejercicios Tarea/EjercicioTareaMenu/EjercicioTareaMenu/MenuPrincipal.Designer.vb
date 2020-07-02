@@ -25,27 +25,27 @@ Partial Class MenuPrincipal
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal))
         Me.panelSuperior = New System.Windows.Forms.Panel()
+        Me.btnMini = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.TimerOcultar = New System.Windows.Forms.Timer(Me.components)
         Me.TimerMostrar = New System.Windows.Forms.Timer(Me.components)
         Me.panelMenu = New System.Windows.Forms.Panel()
+        Me.BtnBolsasSolidarias = New System.Windows.Forms.Button()
+        Me.LogoFront = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnMenu = New System.Windows.Forms.PictureBox()
         Me.panelTotal = New System.Windows.Forms.Panel()
         Me.lblHora = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelMuestraProg = New System.Windows.Forms.Panel()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.BtnBolsasSolidarias = New System.Windows.Forms.Button()
-        Me.LogoFront = New System.Windows.Forms.PictureBox()
-        Me.btnMenu = New System.Windows.Forms.PictureBox()
-        Me.btnMini = New System.Windows.Forms.Button()
-        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.panelSuperior.SuspendLayout()
         Me.panelMenu.SuspendLayout()
-        Me.panelTotal.SuspendLayout()
         CType(Me.LogoFront, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelTotal.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,6 +59,34 @@ Partial Class MenuPrincipal
         Me.panelSuperior.Name = "panelSuperior"
         Me.panelSuperior.Size = New System.Drawing.Size(1100, 44)
         Me.panelSuperior.TabIndex = 1
+        '
+        'btnMini
+        '
+        Me.btnMini.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMini.BackColor = System.Drawing.Color.Transparent
+        Me.btnMini.BackgroundImage = CType(resources.GetObject("btnMini.BackgroundImage"), System.Drawing.Image)
+        Me.btnMini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.btnMini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMini.Location = New System.Drawing.Point(533, 1)
+        Me.btnMini.Name = "btnMini"
+        Me.btnMini.Size = New System.Drawing.Size(40, 40)
+        Me.btnMini.TabIndex = 1
+        Me.btnMini.UseVisualStyleBackColor = False
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCerrar.BackgroundImage = CType(resources.GetObject("btnCerrar.BackgroundImage"), System.Drawing.Image)
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.Location = New System.Drawing.Point(579, 1)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(40, 40)
+        Me.btnCerrar.TabIndex = 0
+        Me.btnCerrar.UseVisualStyleBackColor = False
         '
         'TimerOcultar
         '
@@ -80,9 +108,28 @@ Partial Class MenuPrincipal
         Me.panelMenu.Size = New System.Drawing.Size(1100, 195)
         Me.panelMenu.TabIndex = 4
         '
+        'BtnBolsasSolidarias
+        '
+        Me.BtnBolsasSolidarias.Location = New System.Drawing.Point(399, 6)
+        Me.BtnBolsasSolidarias.Name = "BtnBolsasSolidarias"
+        Me.BtnBolsasSolidarias.Size = New System.Drawing.Size(104, 47)
+        Me.BtnBolsasSolidarias.TabIndex = 6
+        Me.BtnBolsasSolidarias.Text = "Ejercicio Entrega Bolsas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.BtnBolsasSolidarias.UseVisualStyleBackColor = True
+        '
+        'LogoFront
+        '
+        Me.LogoFront.Image = Global.EjercicioTareaMenu.My.Resources.Resources.Logo_HacknelFRont
+        Me.LogoFront.Location = New System.Drawing.Point(515, 61)
+        Me.LogoFront.Name = "LogoFront"
+        Me.LogoFront.Size = New System.Drawing.Size(127, 135)
+        Me.LogoFront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.LogoFront.TabIndex = 5
+        Me.LogoFront.TabStop = False
+        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(239, 13)
+        Me.Button2.Location = New System.Drawing.Point(232, 6)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(104, 47)
         Me.Button2.TabIndex = 3
@@ -91,12 +138,23 @@ Partial Class MenuPrincipal
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(74, 13)
+        Me.Button1.Location = New System.Drawing.Point(72, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 47)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Ejercicio Arreglos 1"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnMenu
+        '
+        Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMenu.Image = CType(resources.GetObject("btnMenu.Image"), System.Drawing.Image)
+        Me.btnMenu.Location = New System.Drawing.Point(1064, 0)
+        Me.btnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMenu.Name = "btnMenu"
+        Me.btnMenu.Size = New System.Drawing.Size(36, 36)
+        Me.btnMenu.TabIndex = 1
+        Me.btnMenu.TabStop = False
         '
         'panelTotal
         '
@@ -141,68 +199,6 @@ Partial Class MenuPrincipal
         Me.PanelMuestraProg.Size = New System.Drawing.Size(1076, 584)
         Me.PanelMuestraProg.TabIndex = 3
         '
-        'Timer1
-        '
-        Me.Timer1.Interval = 1000
-        '
-        'BtnBolsasSolidarias
-        '
-        Me.BtnBolsasSolidarias.Location = New System.Drawing.Point(400, 13)
-        Me.BtnBolsasSolidarias.Name = "BtnBolsasSolidarias"
-        Me.BtnBolsasSolidarias.Size = New System.Drawing.Size(104, 47)
-        Me.BtnBolsasSolidarias.TabIndex = 6
-        Me.BtnBolsasSolidarias.Text = "Ejercicio Entrega Bolsas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.BtnBolsasSolidarias.UseVisualStyleBackColor = True
-        '
-        'LogoFront
-        '
-        Me.LogoFront.Image = Global.EjercicioTareaMenu.My.Resources.Resources.Logo_HacknelFRont
-        Me.LogoFront.Location = New System.Drawing.Point(515, 61)
-        Me.LogoFront.Name = "LogoFront"
-        Me.LogoFront.Size = New System.Drawing.Size(127, 135)
-        Me.LogoFront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.LogoFront.TabIndex = 5
-        Me.LogoFront.TabStop = False
-        '
-        'btnMenu
-        '
-        Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMenu.Image = CType(resources.GetObject("btnMenu.Image"), System.Drawing.Image)
-        Me.btnMenu.Location = New System.Drawing.Point(1064, 0)
-        Me.btnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnMenu.Name = "btnMenu"
-        Me.btnMenu.Size = New System.Drawing.Size(36, 36)
-        Me.btnMenu.TabIndex = 1
-        Me.btnMenu.TabStop = False
-        '
-        'btnMini
-        '
-        Me.btnMini.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMini.BackColor = System.Drawing.Color.Transparent
-        Me.btnMini.BackgroundImage = CType(resources.GetObject("btnMini.BackgroundImage"), System.Drawing.Image)
-        Me.btnMini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.btnMini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMini.Location = New System.Drawing.Point(533, 1)
-        Me.btnMini.Name = "btnMini"
-        Me.btnMini.Size = New System.Drawing.Size(40, 40)
-        Me.btnMini.TabIndex = 1
-        Me.btnMini.UseVisualStyleBackColor = False
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCerrar.BackColor = System.Drawing.Color.Transparent
-        Me.btnCerrar.BackgroundImage = CType(resources.GetObject("btnCerrar.BackgroundImage"), System.Drawing.Image)
-        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrar.Location = New System.Drawing.Point(579, 1)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(40, 40)
-        Me.btnCerrar.TabIndex = 0
-        Me.btnCerrar.UseVisualStyleBackColor = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -212,6 +208,10 @@ Partial Class MenuPrincipal
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
         '
         'MenuPrincipal
         '
@@ -226,10 +226,10 @@ Partial Class MenuPrincipal
         Me.Text = "Form1"
         Me.panelSuperior.ResumeLayout(False)
         Me.panelMenu.ResumeLayout(False)
-        Me.panelTotal.ResumeLayout(False)
-        Me.panelTotal.PerformLayout()
         CType(Me.LogoFront, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMenu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelTotal.ResumeLayout(False)
+        Me.panelTotal.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
