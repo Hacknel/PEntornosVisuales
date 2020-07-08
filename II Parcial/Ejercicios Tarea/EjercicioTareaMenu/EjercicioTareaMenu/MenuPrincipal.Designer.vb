@@ -110,9 +110,14 @@ Partial Class MenuPrincipal
         '
         'BtnBolsasSolidarias
         '
-        Me.BtnBolsasSolidarias.Location = New System.Drawing.Point(399, 6)
+        Me.BtnBolsasSolidarias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue
+        Me.BtnBolsasSolidarias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
+        Me.BtnBolsasSolidarias.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBolsasSolidarias.Font = New System.Drawing.Font("Bradley Hand ITC", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBolsasSolidarias.ForeColor = System.Drawing.SystemColors.ActiveBorder
+        Me.BtnBolsasSolidarias.Location = New System.Drawing.Point(748, 6)
         Me.BtnBolsasSolidarias.Name = "BtnBolsasSolidarias"
-        Me.BtnBolsasSolidarias.Size = New System.Drawing.Size(104, 47)
+        Me.BtnBolsasSolidarias.Size = New System.Drawing.Size(283, 37)
         Me.BtnBolsasSolidarias.TabIndex = 6
         Me.BtnBolsasSolidarias.Text = "Ejercicio Entrega Bolsas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.BtnBolsasSolidarias.UseVisualStyleBackColor = True
@@ -129,18 +134,28 @@ Partial Class MenuPrincipal
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(232, 6)
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Bradley Hand ITC", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button2.Location = New System.Drawing.Point(422, 6)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(104, 47)
+        Me.Button2.Size = New System.Drawing.Size(283, 37)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Ejercicio Libreta de Ahorro"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(72, 3)
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Bradley Hand ITC", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button1.Location = New System.Drawing.Point(87, 6)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(104, 47)
+        Me.Button1.Size = New System.Drawing.Size(283, 37)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Ejercicio Arreglos 1"
         Me.Button1.UseVisualStyleBackColor = True

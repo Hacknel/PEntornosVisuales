@@ -38,6 +38,9 @@ Partial Class ArreglosClase
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.txtVender = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnVender = New System.Windows.Forms.Button()
         Me.txtCantCon = New System.Windows.Forms.TextBox()
         Me.Cantidad = New System.Windows.Forms.Label()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
@@ -47,9 +50,6 @@ Partial Class ArreglosClase
         Me.txtMarca = New System.Windows.Forms.TextBox()
         Me.btnConsultar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnVender = New System.Windows.Forms.Button()
-        Me.txtVender = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -217,6 +217,31 @@ Partial Class ArreglosClase
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Registro"
         '
+        'txtVender
+        '
+        Me.txtVender.Location = New System.Drawing.Point(285, 130)
+        Me.txtVender.Name = "txtVender"
+        Me.txtVender.Size = New System.Drawing.Size(77, 20)
+        Me.txtVender.TabIndex = 12
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(282, 110)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(63, 13)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Cant. Venta"
+        '
+        'btnVender
+        '
+        Me.btnVender.Location = New System.Drawing.Point(285, 156)
+        Me.btnVender.Name = "btnVender"
+        Me.btnVender.Size = New System.Drawing.Size(77, 23)
+        Me.btnVender.TabIndex = 10
+        Me.btnVender.Text = "Vender"
+        Me.btnVender.UseVisualStyleBackColor = True
+        '
         'txtCantCon
         '
         Me.txtCantCon.Location = New System.Drawing.Point(129, 153)
@@ -290,31 +315,6 @@ Partial Class ArreglosClase
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Marca"
         '
-        'btnVender
-        '
-        Me.btnVender.Location = New System.Drawing.Point(285, 156)
-        Me.btnVender.Name = "btnVender"
-        Me.btnVender.Size = New System.Drawing.Size(77, 23)
-        Me.btnVender.TabIndex = 10
-        Me.btnVender.Text = "Vender"
-        Me.btnVender.UseVisualStyleBackColor = True
-        '
-        'txtVender
-        '
-        Me.txtVender.Location = New System.Drawing.Point(285, 130)
-        Me.txtVender.Name = "txtVender"
-        Me.txtVender.Size = New System.Drawing.Size(77, 20)
-        Me.txtVender.TabIndex = 12
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(282, 110)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(63, 13)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Cant. Venta"
-        '
         'ArreglosClase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -324,6 +324,7 @@ Partial Class ArreglosClase
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ArreglosClase"
         Me.Text = "ArreglosClase"
         Me.GroupBox1.ResumeLayout(False)
